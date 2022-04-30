@@ -1,0 +1,190 @@
+<html>
+
+    <head>
+        <title>ORDER</title>
+        <link rel="stylesheet" type="text/css" href="ordercss.css">
+        <script type="text/javascript" src="scriptfile.js">  </script> 
+    </head>
+
+    <body > 
+            <!-- navbar  -->
+        <nav>
+            <ul class="nav-flex-row">
+                <li class="nav-item">
+                    <a href=".\summary.html">SUMMARY</a>
+                </li>
+                <li class="nav-item">
+                    <a href=".\index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href=".\customer.html">CUSTOMER</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">MENU</a>
+                </li>
+            </ul>
+        </nav> 
+        <br> 
+        <br>
+        <br>
+        <br>
+        
+        <div> 
+        <h2>==========Today's Menu==========</h2> 
+        <table width="40%" id="alignment" > 
+            <tr>  
+                <th>Food Item</th> 
+                <th></th>
+                <th>Price(Rs.)</th>
+            </tr> 
+            <tr>
+                <td>Chicken salad</td> 
+                <td> - </td>
+                <td>700.00</td> 
+            </tr> 
+            <tr>
+                <td>Vegetable Salad</td>
+                <td> - </td> 
+                <td>500.00</td> 
+            </tr>
+            <tr> 
+                <td>Chiken Burger</td>
+                <td> - </td>  
+                <td>300.00</td>
+            </tr> 
+            <tr>  
+                <td>Vegetable Burger </td>
+                <td> - </td> 
+                <td>200.00</td> 
+            </tr>  
+            <tr>
+                <td>Water Bottle</td>
+                <td> - </td> 
+                <td>70.00</td>
+            </tr>
+        </table>
+        <h>Order Form</h1>
+        <table style="margin-left: 100px; text-decoration-color:white;">  
+                <tr>
+                    <td>Subscription : </td>
+                    <td> 
+                        <select> 
+                            <option>--Select Item--</option>
+                            <option>Monthly</option>
+                            <option>Weekly</option> 
+                            <option>None</option> 
+                        </select>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>Customer name:</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+
+                    <td>Mode of Payment:</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mobile: </td>
+                    <td><input type="text" id="mblenmb" onfocusout="checkmob()"></td>
+                    <br>
+                    <td>Amount Paid:</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Time:</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+                    <br>
+                    <td>Address:</td>
+                    <td>
+                        <input type="text" >
+                    </td>
+                </tr>
+        </table>
+        <br>
+        <form name="tblform" >
+            <table width="80%"  id="alignment" >
+            <tr>
+            <th>Food Item</th>
+            <th> </th>
+            <th>Quantity</th>
+            <th>Price</th> 
+            </tr>
+            <tr> 
+            <td>Item 1:</td> 
+            <td>
+            <select id="item1">
+            <option value="1">--Select Item--</option> 
+            <option value="Chicken pizza">Chicken salad</option> 
+            <option value="Vegetable Pizza">Vegetable Salad</option> 
+            <option value="Chicken Kottu">Chicken Burger</option> 
+            <option value="Vegetable Kottu">Vegetable Burger</option> 
+            <option value="Water Bottle ">Water Bottle </option> 
+            </select>
+            </td> 
+            <td><input type="number" value="0" id="q1"></td>
+            <td><input type="text" id="p1"></td>
+            </tr>   
+            <tr>
+            <td>Item 2:</td>
+            <td>
+            <select id="item2"> 
+                <option value="1">--Select Item--</option> 
+                <option value="Chicken pizza">Chicken salad</option> 
+                <option value="Vegetable Pizza">Vegetable Salad</option> 
+                <option value="Chicken Kottu">Chicken Burger</option> 
+                <option value="Vegetable Kottu">Vegetable Burger</option> 
+                <option value="Water Bottle ">Water Bottle </option> 
+            </select>
+            </td>
+            <td><input  type="number" value="0" id="q2"></td>  
+            <td><input type="text"  id="p2"></td>  
+            </tr> 
+            <tr>
+            <td>Item 3:</td>
+            <td><select id="item3">  
+                <option value="1">--Select Item--</option> 
+                <option value="Chicken pizza">Chicken salad</option> 
+                <option value="Vegetable Pizza">Vegetable Salad</option> 
+                <option value="Chicken Kottu">Chicken Burger</option> 
+                <option value="Vegetable Kottu">Vegetable Burger</option> 
+                <option value="Water Bottle ">Water Bottle </option> 
+            </select>
+            </td>
+            <td><input type="number" value="0" id="q3"></td>
+            <td><input type="text"  id="p3"></td> 
+            </tr> 
+            <tr>
+            <td>Item 4:</td>
+            <td><select id="item4">   
+                <option value="1">--Select Item--</option> 
+                <option value="Chicken pizza">Chicken salad</option> 
+                <option value="Vegetable Pizza">Vegetable Salad</option> 
+                <option value="Chicken Kottu">Chicken Burger</option> 
+                <option value="Vegetable Kottu">Vegetable Burger</option> 
+                <option value="Water Bottle ">Water Bottle </option> 
+            </select>
+            </td>
+            <td><input type="number" value="0" id="q4"></td>
+            <td><input type="text"  id="p4"></td> 
+            </tr>    
+            <tr>
+            <td></td> 
+            <td></td> 
+            <td><input type="submit" class="button" value="Create Bill" onclick=createBill()></td>
+            <td><input type="reset" class="button" value="Clear"></td>
+            </tr>
+            </table>
+            </form>
+
+
+
+
+</html >

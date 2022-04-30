@@ -1,0 +1,108 @@
+/* Include the padding and border in an element's total width and height */
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+ 
+/* font-family: 'Big Shoulders Text', cursive; */
+ 
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    background-color: #281a5c;
+}
+ 
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #281a5c;
+    padding: 20px 15px;
+}
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: white;
+    font-size: 3 em;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.nav-flex-row li a:hover{
+    background: rgb(142, 204, 255);
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    float: left;
+    width: 33%;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #281a5c;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .button {
+    background-color: white;
+    background-image: right;
+    border: none;
+    color: white;
+    /*padding: 20px;*/
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    display: inline;
+    /*margin: 4px 2px;*/
+  }
+
+
+  button:hover {
+    cursor: pointer;
+  }
+  
+
+  /*.add {border-radius: 50%;}*/
